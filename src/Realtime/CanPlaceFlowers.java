@@ -9,7 +9,12 @@ public class CanPlaceFlowers {
             if(nums[i]==0){
                 int next=(i==size-1?0:nums[i+1]);
                 int prev=(i==0?prev=0:nums[i-1]);
-                if(next==0 && prev==0)count++;
+                if(next==0 && prev==0){count++;
+
+                    nums[i]=1;
+                    if(count>=n) return true;
+                }
+
             }
 
         }

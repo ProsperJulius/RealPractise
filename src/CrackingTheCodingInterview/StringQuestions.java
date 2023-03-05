@@ -38,8 +38,20 @@ public class StringQuestions {
         return new String(stringToChar);
 
     }
+    public static Character firstReapitingCaracter(String input){
+
+        boolean[] lookUpTable=new boolean[128];
+        for(int i=0;i<input.length();i++){
+            if(lookUpTable[input.charAt(i)]){
+                return input.charAt(i);
+            }else{
+                lookUpTable[input.charAt(i)]=true;
+            }
+        }
+        return ' ';
+    }
 
     public static void main(String[] args) {
-        System.out.println(checkPermutation("cat", "tac"));
+        System.out.println(firstReapitingCaracter("advekok"));
     }
 }

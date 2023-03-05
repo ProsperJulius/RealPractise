@@ -1,12 +1,15 @@
 package Realtime;
 
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.stream.Collectors;
+
 public class ReverseWords {
     public static String reverseWords(String word){
-        String [] input_words=word.split(" ");
+        String [] splittedWords=word.split(" ");
         StringBuilder stringBuilder=new StringBuilder();
-
-        for(int i=0;i<input_words.length;i++){
-            StringBuilder builder=new StringBuilder(input_words[i]);
+        for(String element : splittedWords){
+            StringBuilder builder=new StringBuilder(element);
             stringBuilder.append(builder.reverse());
             stringBuilder.append(" ");
         }
