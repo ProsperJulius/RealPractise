@@ -8,8 +8,7 @@ import java.util.Set;
 import java.util.Map;
 public class Solution {
     public static boolean isAnagram(String s, String t) {
-       if(s==null || t==null) return false;
-       if(s.length()<t.length()|| t.length()<s.length())return false;
+       if(s.length()!=t.length() || s==null || t==null)return false;
 
        HashSet<Character> arrayOfCharactersOne=new HashSet<>();
        HashSet<Character> arrayOfCharactersTwo=new HashSet<>();

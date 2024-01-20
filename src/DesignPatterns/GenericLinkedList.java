@@ -9,7 +9,7 @@ public class GenericLinkedList<T> implements GenericList<T> {
     ListNode<T> tail;
     ListNode<T> iterator;
     public GenericLinkedList() {
-        this.root = root;
+        this.root = null;
     }
 
     public GenericLinkedList(ListNode<T> root) {
