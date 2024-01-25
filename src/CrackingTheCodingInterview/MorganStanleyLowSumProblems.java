@@ -1,5 +1,7 @@
 package CrackingTheCodingInterview;
 
+import java.util.*;
+
 public class MorganStanleyLowSumProblems {
     public static int getMinimumCost(List<Integer> numbers){
         if(numbers == null || numbers.size() == 0) return -1;
@@ -7,7 +9,7 @@ public class MorganStanleyLowSumProblems {
         for(Integer num : numbers){
             numbersAndTheirOccurencies.put(num, numbersAndTheirOccurencies.getOrDefault(num,0)+1);
         }
-        Comparator<Integer> comparatorByOccurency = (number1,number2)->{
+        Comparator<Integer> comparatorByOccurency = (number1, number2)->{
             if(numbersAndTheirOccurencies.get(number1)>numbersAndTheirOccurencies.get(number2)){
                 return -1;
             }else if(numbersAndTheirOccurencies.get(number2)>numbersAndTheirOccurencies.get(number1)){

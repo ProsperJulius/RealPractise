@@ -1,5 +1,7 @@
 package Blind75;
 
+import java.util.*;
+
 public class MergeAccounts {
     public static List<List<String>> accountsMerge(List<List<String>> accounts) {
 

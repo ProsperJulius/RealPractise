@@ -1,5 +1,7 @@
 package Blind75;
 
+import java.util.*;
+
 public class TaskScheduler {
 
     public int leastInterval(char[] tasks, int n) {

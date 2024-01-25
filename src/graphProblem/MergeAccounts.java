@@ -1,5 +1,7 @@
 package graphProblem;
 
+import java.util.*;
+
 public class MergeAccounts {
     static HashSet<String> visited = new HashSet<>();
     static Map<String, List<String>> adjacent = new HashMap<String, List<String>>();

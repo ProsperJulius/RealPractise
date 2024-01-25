@@ -1,5 +1,7 @@
 package graphProblem;
 
+import java.util.*;
+
 public class HasPath {
 
     public static boolean existPath(String[][] graph, String src, String destination) {

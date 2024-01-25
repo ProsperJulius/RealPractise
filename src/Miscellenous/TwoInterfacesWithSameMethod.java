@@ -1,7 +1,5 @@
 package Miscellenous;
 
-import Realtime.LinkedList;
-
 import java.util.*;
 
 public class TwoInterfacesWithSameMethod implements One,Two{
@@ -28,7 +26,7 @@ public class TwoInterfacesWithSameMethod implements One,Two{
 
         try {
             LinkedList linkedList=null;
-            linkedList.addTop(8);
+          //  linkedList.addTop(8);
         }catch(Exception e){
             System.out.println("this is null");
         } finally {

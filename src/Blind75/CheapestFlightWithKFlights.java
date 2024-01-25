@@ -1,5 +1,7 @@
 package Blind75;
 
+import java.util.*;
+
 public class CheapestFlightWithKFlights {
     public static int cheapDistance = Integer.MAX_VALUE;
     public static boolean routeFound = false;
